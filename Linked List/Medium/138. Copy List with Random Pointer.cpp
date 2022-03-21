@@ -27,7 +27,7 @@ public:
             originalHead->next=copyHead;
             originalHead=copyHead->next;
         }
-        originalHead=head;
+        originalHead = head;
         while(originalHead)
         {
             if(originalHead->random)
