@@ -23,12 +23,12 @@ public:
     {
         if(root)
         {
-            BSTNode left=findMax(root->left,res);
-            BSTNode right=findMax(root->right,res);
-            bool isBST=(left.isBST && right.isBST && left.maxx < root->val && root->val < right.minn);
-            int sum=root->val+left.sum+right.sum;
+            BSTNode left = findMax(root->left,res);
+            BSTNode right = findMax(root->right,res);
+            bool isBST = (left.isBST && right.isBST && left.maxx < root->val && root->val < right.minn);
+            int sum = root->val+left.sum+right.sum;
             if(isBST)
-                res=max(res,sum);
+                res = max(res,sum);
             return {isBST,min(root->val,left.minn),max(root->val,right.maxx),sum};
         }
         else
@@ -36,7 +36,7 @@ public:
     }
     
     int maxSumBST(TreeNode* root) {
-        int res=0;
+        int res = 0;
         findMax(root,res);
         return res;
     }
