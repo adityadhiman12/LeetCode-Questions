@@ -36,7 +36,7 @@ public:
         }
     }
     TreeNode* bstToGst(TreeNode* root) {
-        vector<int>v;
+        vector<int> v;
         inorder(root,v);
         recreate(root,v);
         return root;
