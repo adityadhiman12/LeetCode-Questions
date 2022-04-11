@@ -13,7 +13,7 @@ public:
         
         if(s1_freq == s2_freq)
             return true;
-        for(; i < s2.size(); i++) 
+        for(; i < s2.size() ; i++) 
         {
             s2_freq[s2[i - s1.size()]]--;
             s2_freq[s2[i]]++;
