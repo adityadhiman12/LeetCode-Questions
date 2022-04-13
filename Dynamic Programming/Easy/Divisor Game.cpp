@@ -5,7 +5,7 @@ public:
         int turn=0;
         while(N && i<N)
         {
-            if(N%i==0)
+            if(N %i == 0)
                 N-=i;
             if(turn)
                 turn=0;
